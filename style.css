@@ -307,14 +307,16 @@ img{
 }
 
 .popup{
-    position:absolute;
-    background-color: black;
-    padding: 10px;
-    bottom: 40px;
-    left: 40%;
+    /* position: fixed; */
     opacity: 1;
-    border-radius: 10px;
+    padding: 20px 20px;
+    background-color: black;
     transition: 1.15s;
-
+    border-radius: 5px;
+    display:flex;
+    left:50%;
+    bottom:100%;
+    width:100%;
 
 }
+

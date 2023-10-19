@@ -6,36 +6,38 @@ var body=document.getElementById("body");
 
 sidebar.style.right="-600px";
 
-menubar.addEventListener("click", function () {
+menubar.addEventListener("click", function (e) {
+    e.preventDefault();
     sidebar.style.right = "0px";
 });
 
-closebars.addEventListener("click", function () {
+closebars.addEventListener("click", function (e) {
+    e.preventDefault();
     sidebar.style.right = "-600px";
   
 });
 
 
     var news=document.getElementById("news");
-    var popup=document.getElementById("popup");
+    var popup=document.querySelector("popup");
     var button1=document.querySelector("btn1");
     button1.addEventListener("click",function(e){
         e.preventDefault();
         if(news==true){
             popup.textContent="Email entered Successfully";
-            popup.style.backgroundcolor="rgba(127, 255, 212, 0.485)";
-            popup.style.bottom="10px";
-            popup.style.opacity="0.7";
+            popup.style.backgroundColor="rgba(127, 255, 212, 0.485)";
+            popup.style.bottom="50%";
+            popup.style.opacity="1";
         }
         else{
-            popup.textContent="Enter email properly";
-            popup.style.backgroundcolor="red";
-            popup.style.opacity="0.7";
-            popup.style.bottom="10px";
+            popup.textContent="Enter properly";
+            popup.style.backgroundColor="red";
+            popup.style.opacity="1";
+            popup.style.bottom="50%;"
         }
 
         setTimeout(function(){ 
-            popup.style.bottom="-40px";
+            popup.style.bottom="-50%";
             popup.style.opacity="0";
         },2000 )
 
