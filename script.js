@@ -1,4 +1,4 @@
-
+var news=false;
 var sidebar = document.querySelector(".sidebar");
 var menubar = document.getElementById("bars");
 var closebars = document.getElementById("closenav");
@@ -15,9 +15,19 @@ closebars.addEventListener("click", function (e) {
     sidebar.style.right = "-600px";
   
 });
-
-
+var i=document.getElementById("i");
 var news=document.querySelector(".news");
+news.addEventListener("keyup",function(){
+    // var newsValue=news.value
+    if(news==""){
+        i.style.visibility="hidden";
+    }
+    else{
+        i.style.visibility="visible";
+    }
+})
+
+
 var popup=document.querySelector(".popup");
 var button1=document.querySelector(".btn1");
 button1.addEventListener("click",function(e){
@@ -38,7 +48,7 @@ button1.addEventListener("click",function(e){
         setTimeout(function(){ 
             popup.style.bottom="-50%";
             popup.style.opacity="0";
-        },2000 )
+        },3000 )
 
 });
 
