@@ -16,8 +16,8 @@ closebars.addEventListener("click", function (e) {
 });
 
 
-var newsLetter=document.querySelector("newsletter");
-var icon=document.getElementById("i");
+var newsLetter=document.querySelector(".newsletter");
+var icon=newsLetter.querySelector("i");
 var news=document.querySelector(".news");
 var mailLabel=newsLetter.querySelector("label");
 
@@ -46,12 +46,13 @@ var popup=document.querySelector(".popup");
 var button1=document.querySelector(".btn1");
 
 button1.addEventListener("click",function(e){
-
+        //prevent default execution
         e.preventDefault();
         if(newsFill==true){
             popup.textContent="Subscription Successful";
-            popup.style.backgroundColor="rgba(127, 255, 212, 0.485)";
+            popup.style.backgroundColor="black";
             popup.style.bottom="2%";
+            popup.style.left="43%";
             popup.style.opacity="1";
         }
         else{
@@ -61,6 +62,9 @@ button1.addEventListener("click",function(e){
             popup.style.opacity="1";
             
         }
+
+        //run line after 2 seconds
+        //set timeout (What should happen, after how many  milliseconds)
         setTimeout(function(){ 
             popup.style.bottom="-50%";
             popup.style.opacity="0";
