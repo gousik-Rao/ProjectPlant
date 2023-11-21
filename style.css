@@ -56,11 +56,6 @@ body{
     
 }
 
-i{
-    cursor: pointer;
-
-}
-
 .heading{
     margin-left:10px;
     text-shadow: 1.5px 1.5px 2px black;
@@ -322,3 +317,16 @@ img{
     padding:6px 25px 6px 25px;
 }
 
+label{
+    display:block;
+    text-align: left;
+    color:red;
+    padding:0 0 0 10%;
+    font-size:smaller;
+    visibility:hidden;
+}
+
+i{
+    visibility:hidden;
+    
+}

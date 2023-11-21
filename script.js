@@ -1,13 +1,12 @@
-var news=false;
+var newsFill=false;
 var sidebar = document.querySelector(".sidebar");
 var menubar = document.getElementById("bars");
 var closebars = document.getElementById("closenav");
 var body=document.getElementById("body");
 
-
 menubar.addEventListener("click", function (e) {
     e.preventDefault();
-    sidebar.style.right = "0px";
+    sidebar.style.right = "0%";
 });
 
 closebars.addEventListener("click", function (e) {
@@ -15,25 +14,42 @@ closebars.addEventListener("click", function (e) {
     sidebar.style.right = "-600px";
   
 });
-var i=document.getElementById("i");
+
+
+var newsLetter=document.querySelector("newsletter");
+var icon=document.getElementById("i");
 var news=document.querySelector(".news");
-news.addEventListener("keyup",function(){
-    // var newsValue=news.value
-    if(news==""){
-        i.style.visibility="hidden";
+var mailLabel=newsLetter.querySelector("label");
+
+news.addEventListener("keyup",function(e){
+    //user input value
+    var enteredValue=news.value;
+
+    if(enteredValue=="")
+    //hide icon and show label
+    {
+        icon.style.visibility="hidden";
+        mailLabel.style.visibility="visible";
+        newsFill=false;
     }
-    else{
-        i.style.visibility="visible";
+    else
+    //show icon and hide label
+    {
+        icon.style.visibility="visible";
+        mailLabel.style.visibility="hidden";
+        newsFill=true;
     }
 })
 
 
 var popup=document.querySelector(".popup");
 var button1=document.querySelector(".btn1");
+
 button1.addEventListener("click",function(e){
+
         e.preventDefault();
-        if(news==true){
-            popup.textContent="Subscription Successfull";
+        if(newsFill==true){
+            popup.textContent="Subscription Successful";
             popup.style.backgroundColor="rgba(127, 255, 212, 0.485)";
             popup.style.bottom="2%";
             popup.style.opacity="1";
@@ -48,9 +64,10 @@ button1.addEventListener("click",function(e){
         setTimeout(function(){ 
             popup.style.bottom="-50%";
             popup.style.opacity="0";
-        },3000 )
+        },2500 )
 
 });
+
 
 var box=document.querySelector(".box");
 var destn=document.querySelector(".destn");
