@@ -2,7 +2,7 @@ var newsFill=false;
 var sidebar = document.querySelector(".sidebar");
 var menubar = document.getElementById("bars");
 var closebars = document.getElementById("closenav");
-var body=document.getElementById("body");
+var body = document.getElementById("body");
 
 menubar.addEventListener("click", function (e) {
     e.preventDefault();
@@ -10,7 +10,7 @@ menubar.addEventListener("click", function (e) {
 });
 
 closebars.addEventListener("click", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     sidebar.style.right = "-600px";
   
 });
