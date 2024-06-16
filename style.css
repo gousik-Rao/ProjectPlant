@@ -175,7 +175,11 @@ i{
     border:solid 2px black;
     padding:25px;
     width:235px;
-
+    transition:0.4s;
+}
+.box1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .leaflogo{
@@ -204,18 +208,31 @@ i{
     padding:60px;
     text-align: center;
 }
+.flowerpots img{
+    height: 50vh;
+    width: 30vh;
+}
+
 .flowerpots1{
     position:relative;
     flex-wrap:wrap;
     text-align: center;
     margin-top:15px;
 }
+.flowerpots1 img{
+    height: 50vh;
+    width: 30vh;
+}
+
 .flowerpots2{
     position:relative;
     flex-wrap:wrap;
     text-align: center;
     margin-top:15px;
-
+}
+.flowerpots2 img{
+    height: 50vh;
+    width: 30vh;
 }
 
 .destn{
@@ -233,24 +250,30 @@ i{
     padding-bottom:100px;
     transition: 2s;
 
-
 }
-
-
 
 .sellercont{
     display: flex;
     justify-content: space-evenly;
     flex-wrap:wrap;
     margin-top: 40px;
+}
 
+.sellerbox{
+    padding:2vh;
+}
+.sellerbox img{
+    height:50vh;
+    width:30vh;
 }
 
 .happyclient{
     position:static;
     display:flex;
 }
-
+.happyclient img{
+    margin-left: -170px;
+}
 .imgdes{
     margin:150px;
     margin-top:50px;
