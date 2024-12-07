@@ -51,17 +51,14 @@ button1.addEventListener("click",function(e){
         if(newsFill==true){
             popup.textContent="Subscription Successful";
             popup.style.backgroundColor="black";
-            popup.style.bottom="2%";
-            popup.style.left="43%";
-            popup.style.opacity="1";
         }
         else{
-            popup.textContent="Error";
+            popup.textContent="Enter valid email";
             popup.style.backgroundColor="red";
-            popup.style.bottom="2%";
-            popup.style.opacity="1";
             
         }
+        popup.style.bottom="10%";
+        popup.style.opacity="1";
 
         //run line after 2 seconds
         //set timeout (What should happen, after how many  milliseconds)
@@ -81,7 +78,7 @@ var seller=document.querySelector(".seller");
         var windowheight=window.innerHeight;
         var boxtop=box.getBoundingClientRect().top;
         
-        if(windowheight>boxtop){
+        if(windowheight > boxtop){
             box.style.opacity="1";
             destn.style.opacity="1";
             seller.style.opacity="1";

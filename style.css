@@ -284,7 +284,7 @@ img{
     margin-top:-35px;
     height: 250;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px black;
+    filter: drop-shadow( 2px 2px 4px black);
 
 }
 
@@ -292,9 +292,6 @@ img{
     background-color:aliceblue;
     align-items: center;
     text-align: center;
-
-
-
 }
 
 .news{
@@ -335,7 +332,7 @@ img{
     border:0.5px black solid;
     border-radius: 10px;
     box-shadow: 2px 2px 4px black;
-    transition:0.1s
+    transition:0.1s;
     
 
 }
@@ -355,19 +352,23 @@ img{
 
 }
 
-.popup{
-    color:aliceblue;
-    position:fixed;
-    border-radius:5px;
+.popup {
+    color: aliceblue;
+    position: fixed;
+    border-radius: 5px;
     z-index: 10;
-    bottom: -90px;
-    left: 48%;
-    transition:1s;
+    bottom: -90px; /* Initially hidden */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 0); /* Perfect centering */
+    transition: 2s;
     text-align: center;
     font-size: large;
     font-weight: bold;
-    padding:6px 25px 6px 25px;
+    padding: 6px 25px;
+    background-color: black; /* Default background for testing */
+    opacity: 0; /* Initially hidden */
 }
+
 
 label{
     display:block;
