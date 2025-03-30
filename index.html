@@ -2,36 +2,41 @@
 
 <html>
     <head>
-        <title>Project</title>
+        <title>Greenden</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com" >
+		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-</head>
+	</head>
 
     <body id="body">
-        <div class="empty">
-
-        </div>
+        
+            <!-- Navigation bar -->
             <nav class="navbar"> 
                 <h1 class="heading">Greenden</h1>
                 
-                <!-- <div class="navbarlinks">
-                    <p><a href="index.html">Home</a></p><br>
-                    <p><a href="">About Us</a></p><br>
-                    <p><a href="">Products</a></p><br>
-                </div> -->
-                
-                <p style="margin-right:4%;"><a><i id="bars" class="fa-solid fa-bars fa-xl"></i></a></p>
-
+                <div class="navbarlinks">
+                    <p class="navbar-link"><a href="index.html">Home</a></p><br>
+                    <p class="navbar-link"><a href="aboutUs.html">About Us</a></p><br>
+                    <p class="navbar-link"><a href="products.html">Products</a></p><br>
+                    <p class="navbar-link"><a href="services.html">Services</a></p><br>
+                    <p class="navbar-link"><a href="contact.html">Contact</a></p><br>
+                </div>
+                <div class="sidenav-icon">
+                    <i id="bars" class="fa-solid fa-bars fa-xl"></i>
+                </div>
+               
+                <!-- Side bar -->
                 <div class="sidebar">
                     <p style="text-align: right;"><i class="fa-solid fa-xmark" style="color: #f2f2f2;padding:20px 30px" id="closenav"></i></p>
                     <div class="buttons">
                         <p style="font-weight: bold;"><a href="index.html">Home</a></p><br>
-                        <p style="font-weight: bold;"><a href="">About Us</a></p><br>
-                        <p style="font-weight: bold;"><a href="">Products</a></p><br>
+                        <p style="font-weight: bold;"><a href="aboutUs.html">About Us</a></p><br>
+                        <p style="font-weight: bold;"><a href="products.html">Products</a></p><br>
+                        <p style="font-weight: bold;"><a href="services.html">Services</a></p><br>
+                        <p style="font-weight: bold;"><a href="contact.html">Contact</a></p><br>
                     </div>
 
                 </div>
@@ -45,7 +50,7 @@
             
             <h1 class="plants">Plants for Your Interior</h1>
             <button class="btn">Shop Now</button>
-            <button class="btn">Watch Video</button>
+            <a href="https://www.youtube.com/@future_plants" target="_blank"><button class="btn">Watch Video</button></a>
             <p class="clients">160+ Plant Species | 100+ clients</p>
         </div>
         
@@ -97,7 +102,7 @@
 
            
         </div> 
-        <p class="destn">plactic and textile products are a practical solution for everyone who loves flowering
+        <p class="destn">plastic and textile products are a practical solution for everyone who loves flowering
                 plants but doesn't have the same or desire to  care for them
             </p>
 
@@ -158,30 +163,44 @@
                 used to decorate a room".<br>
                 Mark Shelly⭐⭐⭐⭐</p>
             </div>
+
         </div>
 
         <div class="newsletter">
-            <h1>Join our News Letter</h1>
-            <p>Sign for our gmail newspaper to get exclusive discounts, updates and more</p>
-            <input type="email" class="news" placeholder="Enter Email" title="Email">
-            <i class="fa-solid fa-circle-check" id="mailtick" style="color: #000000;"></i><br>
-            <label for="mail">Please enter your Mail-ID</label>
-            <button class="btn1">Subscribe</button>
+            <form action="emailing" method="get">
+            	<h1>Join our News Letter</h1>
+            	<p>Sign for our gmail newspaper to get exclusive discounts, updates and more</p>
+            	<input type="email" class="news" name="email" placeholder="Enter Email" title="Email">
+            	<i class="fa-solid fa-circle-check" id="mailtick" style="color: #000000;"></i><br>
+            	<label for="mail">Please enter your Mail-ID</label>
+            	<button class="btn1">Subscribe</button>
+            </form>
         </div>
         
 
-        <div class="greeny">
+        <footer class="greeny">
             <h1 style="font-weight: bolder;">Greeny</h1>
             <p>The Standard chunk of lorem ipsum used since the 1500s is reproduced below for those intrest</p><br>
-            <i class="fa-brands fa-facebook fa-2xl" id="icon" title="Facebook"></i>
-            <i title="X" id="icon" class="fa-brands fa-twitter fa-2xl"></i>
-            <i id="icon" class="fa-brands fa-square-instagram fa-2xl" title="Instagram"></i><br>
+            <a href="https://www.facebook.com" target="_blank" class="icon"><i class="fa-brands fa-facebook fa-2xl" title="Facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="icon"><i title="X" class="fa-brands fa-twitter fa-2xl"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="icon"><i class="fa-brands fa-square-instagram fa-2xl" title="Instagram"></i></a><br>
             <p class="copy">&copy; 2024 Greenday.com</p>
-        </div>
+        </footer>
         <div class="popup">
             <p class="email-enter"></p>
 
         </div>
-        <script src="script.js"></script>
+        
+        <script type="text/javascript" src = "script.js"></script>
     </body> 
 </html>
+
+
+
+
+
+
+
+
+
+
